@@ -4,7 +4,6 @@
 
     app.get('/', (req, res) => {
         
-    
         res.send("Welcome to a simple web app, for testing azure web app deployment using github actions")
     });
 
