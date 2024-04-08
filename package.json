@@ -4,7 +4,9 @@
   "description": "Testing azure web app service + github actions",
   "main": "index.js",
   "scripts": {
+    "build": "node index.js",
     "start": "node index.js"
+
 
   },
   "author": "Delano",
