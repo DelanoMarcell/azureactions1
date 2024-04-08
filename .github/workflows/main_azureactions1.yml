@@ -20,14 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install 
 
-      - name: Build (if needed)
-        run: npm run build  # Only if you have a build process
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: ./build  # Update if your build output is in a different folder
+          path: . 
 
   deploy:
     runs-on: ubuntu-latest
