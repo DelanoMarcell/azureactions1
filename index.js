@@ -36,6 +36,12 @@ const cars = [
 
 ]
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the cars API');
+}
+);
+
+
 
 //get all cars
 app.get('/cars', (req, res) => {
