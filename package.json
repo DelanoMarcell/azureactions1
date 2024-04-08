@@ -4,16 +4,13 @@
   "description": "Testing azure web app service + github actions",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js",
     "start": "node index.js"
-
+    
 
   },
   "author": "Delano",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5" 
+    "express": "^4.19.2"
   }
-  
 }
