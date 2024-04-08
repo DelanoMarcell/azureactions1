@@ -10,7 +10,7 @@ app.get('/cars', (req, res) => {
 //get all cars, add delete button
 var loadButton = document.getElementById('loadCarsBtn');
 loadButton.addEventListener('click', function () {
-    const url = 'http://localhost:3000/cars';
+    const url = '/cars';
     fetch(url)
         .then(response => response.json())
         .then(cars => {
@@ -52,7 +52,7 @@ carForm.addEventListener('submit', function(event) {
     };
 
     // Send the new car data to the server
-    fetch('http://localhost:3000/cars', {
+    fetch('/cars', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
