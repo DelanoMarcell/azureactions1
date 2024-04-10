@@ -69,7 +69,7 @@ carForm.addEventListener('submit', function(event) {
         document.getElementById('price').value = '';
         
     })
-    .catch((error) => {
+    .catch((error) => {         
         console.error('Error:', error);
     });
 });
